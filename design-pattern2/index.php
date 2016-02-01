@@ -2,7 +2,7 @@
 
 require 'AutoLoader.php';
 
-$factory = new ConectionFactory();
-$conexao = $factory->getConection();
+$factory = new ConnectionFactory();
+$conexao = $factory->getConnection();
 
 var_dump($conexao);

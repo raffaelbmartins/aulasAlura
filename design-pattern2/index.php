@@ -1,3 +1,8 @@
 <?php
 
-#Design Patterns 2
+require 'AutoLoader.php';
+
+$factory = new ConectionFactory();
+$conexao = $factory->getConection();
+
+var_dump($conexao);

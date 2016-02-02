@@ -35,4 +35,11 @@ echo "<hr>";
 
 var_dump($historico);
 
+echo "<hr>";
+echo "<h1> Restaurando o Contrato para \"Acertado\" </h1>";
+$contrato->restaura($historico->getEstado(2));
+
+var_dump($contrato);
+
+
 

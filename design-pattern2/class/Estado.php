@@ -6,7 +6,7 @@ class Estado {
     private $dataHora;
     
     function __construct(Contrato $contrato){
-        $this->cotrato = $contrato;
+        $this->contrato = $contrato;
         $this->dataHora = date('Y-m-d h:i:s');
     }
     

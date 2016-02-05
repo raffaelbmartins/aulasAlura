@@ -12,4 +12,8 @@ class RaizQuadrada implements IExpressao{
         $result = $this->expressao->avalia();
         return sqrt($result);
     }
+    
+    public function aceita(Visitor $visitor){
+        //
+    }
 }

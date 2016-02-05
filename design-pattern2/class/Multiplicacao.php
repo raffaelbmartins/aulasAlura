@@ -10,9 +10,21 @@ class Multiplicacao implements IExpressao{
         $this->direita = $direita;
     }
     
+    public function getEsquerda(){
+        return $this->esquerda;
+    }
+    
+    public function getDireita(){
+        return $this->direita;
+    }
+    
     public function avalia(){
         $resultEsquerda = $this->esquerda->avalia();
         $resultDireita = $this->direita->avalia();
         return $resultEsquerda * $resultDireita;
+    }
+    
+    public function aceita(Visitor $visitor){
+        $visitor->visitaMultiplicacao($this);
     }
 }

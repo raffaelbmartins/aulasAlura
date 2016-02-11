@@ -13,13 +13,6 @@ class Pedido {
         $this->status = $status;
     }
     
-<<<<<<< HEAD
-=======
-    public function setDataFinaliza($data){
-        $this->dataFinaliza = $data;
-    }
-    
->>>>>>> cf203068d398b38da691574f13e5faea43ceda10
     public function getCliente(){
         return $this->cliente;
     }
@@ -35,7 +28,6 @@ class Pedido {
     public function getDataFinaliza(){
         return $this->dataFinaliza;
     }
-<<<<<<< HEAD
     
     public function paga() {
         $this->status = new Pago();
@@ -45,6 +37,5 @@ class Pedido {
         $this->dataFinalizacao = date("m/d/Y");
         $this->status = new Entregue();
     }
-=======
->>>>>>> cf203068d398b38da691574f13e5faea43ceda10
+
 }

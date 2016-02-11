@@ -7,10 +7,9 @@ class Pedido {
     private $dataFinaliza;
     
     
-    function __construct($cliente, $valor, $status){
+    function __construct($cliente, $valor){
         $this->cliente = $cliente;
         $this->valor = $valor;
-        $this->status = $status;
     }
     
     public function getCliente(){
